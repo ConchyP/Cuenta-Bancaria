@@ -25,11 +25,7 @@ public class SavingAccount extends Account {
 
     @Override
     public void deposit(float amount) {
-        if (active) {
-            super.deposit(amount);
-        } else {
-            System.out.println("Account is inactive");
-        }
+        super.deposit(amount);
         this.updateAccountStatus();
     }
 
@@ -46,7 +42,10 @@ public class SavingAccount extends Account {
     @Override
     public void printAccountSummary() {
         super.printAccountSummary();
-        System.out.println("Account Active: " + active);
+        System.out.println("Balance: $" + balance);
+        System.out.println("Monthly commission: $" + monthlyCommission);
+        System.out.println("Nº transactions: " + active);
+
     }
 
     private void updateAccountStatus() {

@@ -32,8 +32,8 @@ public class Account {
     public void calculateInterest() {
 
         float monthlyRate = annualRate / 12;
-        float monthlyCommission = balance * monthlyRate;
-        balance += monthlyCommission;
+        float interest = balance * monthlyRate;
+        balance += interest;
     }
 
     public void monthlyStatement() {

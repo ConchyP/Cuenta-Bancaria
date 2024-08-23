@@ -17,7 +17,7 @@ public class CheckingAccount extends Account {
             overdraft += amount - balance;
             balance = 0;
             numbOfWithdrawals += 1;
-            System.out.println("Overdraft applied. New overdraft: $" + overdraft);
+            System.out.println("withdrawal applied");
         }
     }
 
@@ -35,9 +35,14 @@ public class CheckingAccount extends Account {
         super.deposit(amount);
     }
 
+    public void monthlyStatement() {
+        super.monthlyStatement();
+    }
+
     @Override
     public void printAccountSummary() {
         super.printAccountSummary();
+        System.out.println("Balance: $" + balance);
         System.out.println("Overdraft: $" + overdraft);
     }
 }
