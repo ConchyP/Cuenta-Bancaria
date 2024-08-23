@@ -42,6 +42,9 @@ La clase Cuenta tiene dos clases hijas:
 
 
 ## Diagrama de clases
+![image](https://github.com/user-attachments/assets/c3b11760-f19a-418b-82d6-cf658853e2a1)
 
 
 ## % Cobertura testing
+
+![image](https://github.com/user-attachments/assets/1225a2ec-214b-4fc5-b79f-ce4f7c7bd0ea)
